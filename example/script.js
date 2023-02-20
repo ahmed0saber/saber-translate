@@ -2,7 +2,7 @@ const translations = {
     main: {
         h1: {
             ar: "قم بإنشاء مواقع متعددة اللغات بسهولة.",
-            en: "Create a multi-language websites easily."
+            en: "Create multi-language websites easily."
         },
         paragraph: {
             ar: "بواسطة saber-translate، يمكنك إضافة المحتوى لموقعك بعدة لغات مختلفة و التبديل بينهم دون الحاجة إلى إعادة تحميل الصفحة الحالية.",
