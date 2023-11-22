@@ -1,3 +1,4 @@
+const languages = ["ar", "en"]
 const translations = {
     main: {
         h1: {
@@ -18,6 +19,11 @@ const translations = {
         en: "English"
     }
 }
-const languages = ["ar", "en"]
 
-saberTranslate('en')
+const translationHandler = new SaberTranslate(translations, languages)
+translationHandler.setLanguage("ar")
+
+const langBtns = document.querySelectorAll(".lang-btn")
+langBtns.forEach(btn => {
+    btn.addEventListener("click", () => translationHandler.setLanguage(btn.dataset.lang))
+})
