@@ -11,6 +11,7 @@ class SaberTranslate {
         const rootElement = document.getElementsByTagName('html')[0]
         this.languages.forEach(language => rootElement.classList.remove(language))
         rootElement.classList.add(lang)
+        rootElement.setAttribute("lang", lang)
     }
 
     getTranslation(template = "", lang) {
