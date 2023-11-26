@@ -17,11 +17,19 @@ const translations = {
     en_btn: {
         ar: "الانجليزية",
         en: "English"
+    },
+    errors: {
+        phone: {
+            ar: "رقم الهاتف غير صحيح",
+            // en: "The phone number is not valid"
+        }
     }
 }
 
 const translationHandler = new SaberTranslate(translations, languages)
-translationHandler.setLanguage("ar")
+translationHandler.setLanguage("en")
+
+console.log(translationHandler.getTranslation("errors.phone"))
 
 const langBtns = document.querySelectorAll(".lang-btn")
 langBtns.forEach(btn => {

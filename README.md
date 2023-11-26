@@ -2,7 +2,9 @@
 
 with saber-translate, you can easily add content of your website in different languages and switch between them without refreshing the page.
 
-saber-translate's size is less than 1kb.
+saber-translate.js is less than 5kb.
+
+saber-translate.min.js is less than 3kb.
 
 ## example
 
